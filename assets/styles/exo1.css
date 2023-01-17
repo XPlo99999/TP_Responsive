@@ -1,0 +1,71 @@
+
+:root {
+    --main-color: green;
+}
+
+html {
+    background-color: var(--main-color);
+}
+
+header {
+    background-color: orange;
+    text-align: center;
+}
+
+header h2 {
+    text-align: center;
+    color : black;
+}
+
+main {
+    color: pink
+}
+
+main h2 {
+    color: red;
+}
+
+footer h2 {
+    text-align: center;
+    color : var(--main-color);
+}
+
+.Container {
+    margin-top: 10%;
+    margin-bottom: 7.5%;
+    border: solid purple;
+    padding: 4%;
+}
+
+@media screen and (min-width: 640px) { 
+    div {
+        display: inline-table;    
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        display: block;
+        background-color: var(--main-color);
+    }
+    
+    header h2 {
+        color: var(--main-color);
+    }
+}
+
+@media print {
+    footer {
+        display: block;
+    }
+
+    footer h2 {
+        color : black;
+    }
+}
